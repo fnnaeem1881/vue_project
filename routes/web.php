@@ -20,6 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/{anypath}', 'HomeController@index')->where('path','.*');
 
 Route::get('/category','Admin\CategoryController@index')->name('category.index');
+Route::post('/submit-category','Admin\CategoryController@store')->name('category.store');
 Route::get('/post','Admin\PostController@index')->name('post.index');
