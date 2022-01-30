@@ -47,6 +47,10 @@ window.toastr = toastr;
 import Vuex from 'vuex'
 
 Vue.use(Vuex)
+import storeData from './vuex/store';
+const store = new Vuex.Store(
+    storeData
+  );
 
 /**
  * The following block of code may be used to automatically register your
@@ -79,5 +83,6 @@ import { Alert } from 'bootstrap';
 
 const app = new Vue({
     el: '#content',
-    router
+    router,
+    store
 });

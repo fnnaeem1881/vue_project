@@ -61156,11 +61156,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var toastr__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! toastr */ "./node_modules/toastr/toastr.js");
 /* harmony import */ var toastr__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(toastr__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
-/* harmony import */ var _routes_routes_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./routes/routes.js */ "./resources/js/routes/routes.js");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
-/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _vuex_store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./vuex/store */ "./resources/js/vuex/store.js");
+/* harmony import */ var _routes_routes_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./routes/routes.js */ "./resources/js/routes/routes.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
+/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_8__);
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -61173,7 +61174,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // Vue Im
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js"); // Vue Router
 
 
-vue__WEBPACK_IMPORTED_MODULE_6___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]); // V-form
+vue__WEBPACK_IMPORTED_MODULE_7___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]); // V-form
 
 
 window.Form = vform__WEBPACK_IMPORTED_MODULE_1__["default"]; //sweetalart2
@@ -61196,7 +61197,9 @@ window.Toast = Toast; // Toastr Alert
 window.toastr = toastr__WEBPACK_IMPORTED_MODULE_3___default.a; // vue x
 
 
-vue__WEBPACK_IMPORTED_MODULE_6___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_4__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_7___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_4__["default"]);
+
+var store = new vuex__WEBPACK_IMPORTED_MODULE_4__["default"].Store(_vuex_store__WEBPACK_IMPORTED_MODULE_5__["default"]);
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -61207,7 +61210,7 @@ vue__WEBPACK_IMPORTED_MODULE_6___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_4__
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-vue__WEBPACK_IMPORTED_MODULE_6___default.a.component('example-component', __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]);
+vue__WEBPACK_IMPORTED_MODULE_7___default.a.component('example-component', __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -61219,12 +61222,13 @@ vue__WEBPACK_IMPORTED_MODULE_6___default.a.component('example-component', __webp
 
 
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
-  routes: _routes_routes_js__WEBPACK_IMPORTED_MODULE_5__["routes"],
+  routes: _routes_routes_js__WEBPACK_IMPORTED_MODULE_6__["routes"],
   mode: "history"
 });
-var app = new vue__WEBPACK_IMPORTED_MODULE_6___default.a({
+var app = new vue__WEBPACK_IMPORTED_MODULE_7___default.a({
   el: '#content',
-  router: router
+  router: router,
+  store: store
 });
 
 /***/ }),
@@ -61580,6 +61584,25 @@ var routes = [{
   path: '/add-category',
   component: _components_backend_category_add_category_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
 }];
+
+/***/ }),
+
+/***/ "./resources/js/vuex/store.js":
+/*!************************************!*\
+  !*** ./resources/js/vuex/store.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+  state: {
+    count: 0
+  },
+  getters: {},
+  mutations: {}
+});
 
 /***/ }),
 
