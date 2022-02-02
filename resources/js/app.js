@@ -78,7 +78,7 @@ import { Alert } from 'bootstrap';
 
   const router = new VueRouter({
     routes ,
-    mode: "history",
+    //mode: "history",
   });
 
 const app = new Vue({

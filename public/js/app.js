@@ -4594,8 +4594,42 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "categoris"
+  name: "categoris",
+  mounted: function mounted() {
+    this.$store.dispatch("categoryAll");
+  },
+  computed: {
+    getCategory: function getCategory() {
+      return this.$store.getters.categories;
+    }
+  },
+  methods: {
+    statusName: function statusName(status) {
+      var data = {
+        0: "Inactive",
+        1: "Active"
+      };
+      return data[status];
+    },
+    statusColor: function statusColor(status) {
+      var data = {
+        0: "bg-danger",
+        1: "bg-success"
+      };
+      return data[status];
+    },
+    remove: function remove(id) {
+      axios.get("categoryDestroy/" + id).then(function (response) {
+        toastr.success("Category Has Ben Delated");
+        this.$store.dispatch("categoryAll");
+      })["catch"](function (error) {});
+    }
+  }
 });
 
 /***/ }),
@@ -44394,7 +44428,61 @@ var render = function () {
             ),
           ]),
           _vm._v(" "),
-          _vm._m(0),
+          _c("div", { staticClass: "card-body table-responsive p-0" }, [
+            _c("table", { staticClass: "table table-hover text-nowrap" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _c(
+                "tbody",
+                _vm._l(_vm.getCategory, function (category) {
+                  return _c("tr", [
+                    _c("td", [_vm._v(_vm._s(category.id))]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v(_vm._s(category.name))]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v(_vm._s(category.slug))]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "span",
+                        {
+                          staticClass: "badge",
+                          class: _vm.statusColor(category.status),
+                        },
+                        [_vm._v(_vm._s(_vm.statusName(category.status)))]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-danger btn-sm",
+                          attrs: { type: "button" },
+                        },
+                        [_vm._v("Edit")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-danger btn-sm",
+                          attrs: { type: "button" },
+                          on: {
+                            click: function ($event) {
+                              return _vm.remove(category.id)
+                            },
+                          },
+                        },
+                        [_vm._v("Delete")]
+                      ),
+                    ]),
+                  ])
+                }),
+                0
+              ),
+            ]),
+          ]),
         ]),
       ]),
     ]),
@@ -44405,41 +44493,17 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-body table-responsive p-0" }, [
-      _c("table", { staticClass: "table table-hover text-nowrap" }, [
-        _c("thead", [
-          _c("tr", [
-            _c("th", [_vm._v("ID")]),
-            _vm._v(" "),
-            _c("th", [_vm._v("Name")]),
-            _vm._v(" "),
-            _c("th", [_vm._v("Slug")]),
-            _vm._v(" "),
-            _c("th", [_vm._v("Status")]),
-            _vm._v(" "),
-            _c("th", [_vm._v("Action")]),
-          ]),
-        ]),
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_vm._v("ID")]),
         _vm._v(" "),
-        _c("tbody", [
-          _c("tr", [
-            _c("td", [_vm._v("183")]),
-            _vm._v(" "),
-            _c("td", [_vm._v("John Doe")]),
-            _vm._v(" "),
-            _c("td", [_vm._v("11-7-2014")]),
-            _vm._v(" "),
-            _c("td", [
-              _c("span", { staticClass: "tag tag-success" }, [
-                _vm._v("Approved"),
-              ]),
-            ]),
-            _vm._v(" "),
-            _c("td", [
-              _vm._v("\n                      edit\n                  "),
-            ]),
-          ]),
-        ]),
+        _c("th", [_vm._v("Name")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Slug")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Status")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Action")]),
       ]),
     ])
   },
@@ -61222,8 +61286,8 @@ vue__WEBPACK_IMPORTED_MODULE_7___default.a.component('example-component', __webp
 
 
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
-  routes: _routes_routes_js__WEBPACK_IMPORTED_MODULE_6__["routes"],
-  mode: "history"
+  routes: _routes_routes_js__WEBPACK_IMPORTED_MODULE_6__["routes"] //mode: "history",
+
 });
 var app = new vue__WEBPACK_IMPORTED_MODULE_7___default.a({
   el: '#content',
@@ -61596,12 +61660,30 @@ var routes = [{
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   state: {
-    count: 0
+    CategoryData: []
   },
-  getters: {},
-  mutations: {}
+  getters: {
+    categories: function categories(state) {
+      return state.CategoryData;
+    }
+  },
+  actions: {
+    categoryAll: function categoryAll(data) {
+      axios__WEBPACK_IMPORTED_MODULE_0___default.a.get("category").then(function (response) {
+        data.commit("categoryy", response.data.category); //console.log(response.data.category);
+      })["catch"](function (error) {});
+    }
+  },
+  mutations: {
+    categoryy: function categoryy(state, data) {
+      return state.CategoryData = data;
+    }
+  }
 });
 
 /***/ }),

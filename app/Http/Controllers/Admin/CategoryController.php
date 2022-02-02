@@ -15,8 +15,11 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $category = Category::with('post')->get();
-        return $category;
+        $category = Category::get();
+
+        return response()->json([
+            'category' => $category
+        ]);
     }
 
     /**
@@ -90,6 +93,7 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $delete=Category::find($id);
+        $delete->delete();
     }
 }

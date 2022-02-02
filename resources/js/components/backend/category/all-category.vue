@@ -25,19 +25,23 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>183</td>
-                      <td>John Doe</td>
-                      <td>11-7-2014</td>
-                      <td><span class="tag tag-success">Approved</span></td>
+                    <tr v-for="category in getCategory">
+                      <td>{{category.id}}</td>
+                      <td>{{category.name}}</td>
+                      <td>{{category.slug}}</td>
+
+                      <td><span class="badge" :class="statusColor(category.status)">{{statusName(category.status)}}</span></td>
                       <td>
-                          edit
+
+                            <button type="button" class="btn btn-danger btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm" @click="remove(category.id)">Delete</button>
                       </td>
                     </tr>
 
                   </tbody>
                 </table>
               </div>
+
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
@@ -47,6 +51,35 @@
 </template>
 <script>
     export default {
-    name: "categoris"
+    name: "categoris",
+    mounted(){
+        this.$store.dispatch("categoryAll");
+    },
+    computed: {
+        getCategory(){
+        return this.$store.getters.categories;
+    }
+    },
+    methods:{
+        statusName(status){
+            let data = { 0:"Inactive", 1:"Active"}
+            return data[status];
+        },
+         statusColor(status){
+            let data = { 0:"bg-danger", 1:"bg-success"}
+            return data[status];
+        },
+        remove(id){
+             axios.get("categoryDestroy/" +id)
+            .then(function(response){
+               toastr.success("Category Has Ben Delated");
+                this.$store.dispatch("categoryAll");
+
+
+            }).catch(function(error){
+
+            })
+        }
+    }
     }
 </script>
