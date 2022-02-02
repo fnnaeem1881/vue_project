@@ -4598,6 +4598,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "categoris",
   mounted: function mounted() {
@@ -4624,10 +4629,16 @@ __webpack_require__.r(__webpack_exports__);
       return data[status];
     },
     remove: function remove(id) {
+      var test = this;
       axios.get("categoryDestroy/" + id).then(function (response) {
+        test.$store.dispatch("categoryAll");
         toastr.success("Category Has Ben Delated");
-        this.$store.dispatch("categoryAll");
-      })["catch"](function (error) {});
+      })["catch"](function (error) {
+        toastr.error("Category not Delated");
+      });
+    },
+    emtyData: function emtyData() {
+      return this.getCategory.length < 1;
     }
   }
 });
@@ -44434,52 +44445,56 @@ var render = function () {
               _vm._v(" "),
               _c(
                 "tbody",
-                _vm._l(_vm.getCategory, function (category) {
-                  return _c("tr", [
-                    _c("td", [_vm._v(_vm._s(category.id))]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v(_vm._s(category.name))]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v(_vm._s(category.slug))]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c(
-                        "span",
-                        {
-                          staticClass: "badge",
-                          class: _vm.statusColor(category.status),
-                        },
-                        [_vm._v(_vm._s(_vm.statusName(category.status)))]
-                      ),
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-danger btn-sm",
-                          attrs: { type: "button" },
-                        },
-                        [_vm._v("Edit")]
-                      ),
+                [
+                  _vm._l(_vm.getCategory, function (category) {
+                    return _c("tr", [
+                      _c("td", [_vm._v(_vm._s(category.id))]),
                       _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-danger btn-sm",
-                          attrs: { type: "button" },
-                          on: {
-                            click: function ($event) {
-                              return _vm.remove(category.id)
+                      _c("td", [_vm._v(_vm._s(category.name))]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(_vm._s(category.slug))]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "span",
+                          {
+                            staticClass: "badge",
+                            class: _vm.statusColor(category.status),
+                          },
+                          [_vm._v(_vm._s(_vm.statusName(category.status)))]
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-danger btn-sm",
+                            attrs: { type: "button" },
+                          },
+                          [_vm._v("Edit")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-danger btn-sm",
+                            attrs: { type: "button" },
+                            on: {
+                              click: function ($event) {
+                                return _vm.remove(category.id)
+                              },
                             },
                           },
-                        },
-                        [_vm._v("Delete")]
-                      ),
-                    ]),
-                  ])
-                }),
-                0
+                          [_vm._v("Delete")]
+                        ),
+                      ]),
+                    ])
+                  }),
+                  _vm._v(" "),
+                  _vm.emtyData() ? _c("tr", [_vm._m(1)]) : _vm._e(),
+                ],
+                2
               ),
             ]),
           ]),
@@ -44504,6 +44519,16 @@ var staticRenderFns = [
         _c("th", [_vm._v("Status")]),
         _vm._v(" "),
         _c("th", [_vm._v("Action")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", { attrs: { colspan: "10" } }, [
+      _c("h5", { staticClass: "text-center text-danger" }, [
+        _vm._v("Data Not Found"),
       ]),
     ])
   },

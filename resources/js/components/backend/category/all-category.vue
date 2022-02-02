@@ -37,6 +37,11 @@
                             <button type="button" class="btn btn-danger btn-sm" @click="remove(category.id)">Delete</button>
                       </td>
                     </tr>
+                    <tr v-if="emtyData()">
+                        <td colspan="10">
+                            <h5 class="text-center text-danger">Data Not Found</h5>
+                        </td>
+                    </tr>
 
                   </tbody>
                 </table>
@@ -54,6 +59,7 @@
     name: "categoris",
     mounted(){
         this.$store.dispatch("categoryAll");
+
     },
     computed: {
         getCategory(){
@@ -70,16 +76,23 @@
             return data[status];
         },
         remove(id){
+              let test = this;
              axios.get("categoryDestroy/" +id)
             .then(function(response){
+
+                test.$store.dispatch("categoryAll");
                toastr.success("Category Has Ben Delated");
-                this.$store.dispatch("categoryAll");
+
 
 
             }).catch(function(error){
-
+                toastr.error("Category not Delated");
             })
-        }
+        },
+        emtyData(){
+            return (this.getCategory.length <1);
+        },
+
     }
     }
 </script>
