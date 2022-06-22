@@ -4,31 +4,80 @@
             <div class="col-6 pt-3 offset-3">
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">Add New Category</h3>
+                        <h3 class="card-title">Add New Post</h3>
 
                         <div class="card-tools">
-                            <router-link to="/categoris" class="btn btn-info">
-                                ALl Category
+                            <router-link to="/post" class="btn btn-info">
+                                ALl Post
                             </router-link>
                         </div>
                     </div>
                     <!-- /.card-header -->
-                    <form @submit.prevent="addCategory">
+                    <form @submit.prevent="addPost" enctype="multipart/form-data">
                         <div class="card-body">
                             <div class="form-group">
-                                <label for="name">Category Name</label>
+                                <label for="title">Post Title</label>
                                 <input
                                     type="text"
-                                    v-model="form.name"
+                                    v-model="form.title"
                                     class="form-control"
-                                    id="name"
-                                    placeholder="Enter Category Name"
+                                    id="title"
+                                    placeholder="Enter Post Title"
                                 />
                                 <div
                                     class="text-danger"
-                                    v-if="form.errors.has('name')"
-                                    v-html="form.errors.get('name')"
+                                    v-if="form.errors.has('title')"
+                                    v-html="form.errors.get('title')"
                                 />
+                            </div>
+                             <div class="form-group">
+                                <label for="category">Select Category</label>
+                                <!-- <input
+                                    type="text"
+                                    v-model="form.category"
+                                    class="form-control"
+                                    id="category"
+                                    placeholder="Enter Post category"
+                                /> -->
+                                <select v-model="form.category_id"  class="form-control"  id="category_id">
+                                    <option  v-for="category in getCategory" :value="category.id">{{category.name}}</option>
+                                </select>
+                                <div
+                                    class="text-danger"
+                                    v-if="form.errors.has('category')"
+                                    v-html="form.errors.get('category')"
+                                />
+                            </div>
+                             <div class="form-group">
+                                <label for="content">Post Content</label>
+                                <textarea
+                                    v-model="form.content"
+                                    class="form-control"
+                                    id="content"
+                                    placeholder="Enter Post Content"
+                                > </textarea>
+                                <div
+                                    class="text-danger"
+                                    v-if="form.errors.has('content')"
+                                    v-html="form.errors.get('content')"
+                                />
+                            </div>
+                             <div class="form-group">
+                                <label for="thumbaile">Post thumbaile</label>
+                                <input
+                                    type="file"
+                                    class="form-control"
+                                    id="thumbaile"   @change='upload_avatar'  style="padding:0;line-height:29px"
+                                    placeholder="Enter Post thumbaile" name="avatar"
+                                />
+                                <div
+                                    class="text-danger"
+                                    v-if="form.errors.has('thumbaile')"
+                                    v-html="form.errors.get('thumbaile')"
+                                />
+                            <div class="avatar img-fluid img-circle" v-if="get_avatar" style="margin-top:10px">
+                                <img width="100px" :src="get_avatar()" v-bind:style="form.styleObject"/>
+                            </div>
                             </div>
 
                             <!-- <div class="form-group">
@@ -80,7 +129,7 @@
                                 :disabled="form.busy"
                                 class="btn btn-primary"
                             >
-                                Add Category
+                                Add Post
                             </button>
                             <button
                                 type="reset"
@@ -99,18 +148,31 @@
 </template>
 <script>
 export default {
-    name: "add-categoris",
+    name: "add-post",
     data: function () {
         return {
             form: new Form({
-                name: null,
+                title: null,
+                content: null,
+                avatar: null,
+                category_id: '',
                 //slug:null,
                 status: 1,
             }),
         };
+
+    },
+
+     mounted() {
+    this.$store.dispatch("categoryAll");
+    },
+    computed: {
+        getCategory() {
+        return this.$store.getters.categories;
+        },
     },
     methods: {
-        addCategory: function () {
+        addPost: function () {
             let test = this;
             Vue.swal
                 .fire({
@@ -124,11 +186,15 @@ export default {
                     /* Read more about isConfirmed, isDenied below */
                     if (result.isConfirmed) {
                         this.form
-                            .post("/submit-category")
+                            .post("/submit-post")
                             .then(function (data) {
 
-                                test.$router.push('categoris');
-                                test.form.name = null;
+                                test.$router.push('post');
+                                test.form.title = null;
+                                test.form.content = null;
+                                test.form.thumbaile = null;
+                                test.avatar='';
+                                test.form.status = null;
                                 Vue.swal.fire("Saved!", "", "success");
                             }).catch(function (error) {
                             Vue.swal.fire({
@@ -150,6 +216,26 @@ export default {
                     }
                 });
         },
+        upload_avatar(e){
+              let file = e.target.files[0];
+                let reader = new FileReader();
+
+                if(file['size'] < 2111775)
+                {
+                    reader.onloadend = (file) => {
+                    //console.log('RESULT', reader.result)
+                     this.form.avatar = reader.result;
+                    }
+                     reader.readAsDataURL(file);
+                }else{
+                    alert('File size can not be bigger than 2 MB')
+                }
+            },
+             //For getting Instant Uploaded Photo
+            get_avatar(){
+               let photo = (this.form.avatar);
+               return photo;
+            },
     },
 };
 </script>

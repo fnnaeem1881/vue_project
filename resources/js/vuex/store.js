@@ -2,11 +2,15 @@ import Axios from "axios";
 
 export default {
     state: {
-        CategoryData:[]
+        CategoryData:[],
+        PostData:[]
       },
       getters: {
         categories(state){
             return state.CategoryData;
+        },
+        post(state){
+            return state.PostData;
         }
       },
       actions:{
@@ -14,7 +18,15 @@ export default {
             Axios.get("category")
             .then(function(response){
                data.commit("categoryy",response.data.category);
-               //console.log(response.data.category);
+            }).catch(function(error){
+
+            })
+        },
+        PostGet(data){
+            Axios.get("post")
+            .then(function(response){
+                // alert('post');
+               data.commit("posty",response.data.post);
             }).catch(function(error){
 
             })
@@ -23,6 +35,9 @@ export default {
       mutations: {
         categoryy(state, data){
             return state.CategoryData=data;
+        },
+        posty(state, data){
+            return state.PostData=data;
         }
       }
 }

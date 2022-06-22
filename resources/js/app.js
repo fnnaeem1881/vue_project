@@ -20,21 +20,23 @@ window.Form = Form;
 
 
 //sweetalart2
-import Swal from 'sweetalert2'
+import VueSweetalert2 from 'vue-sweetalert2';
+Vue.use(VueSweetalert2);
+import 'sweetalert2/dist/sweetalert2.min.css';
 
-const Toast = Swal.mixin({
-    toast: true,
-    position: 'top-end',
-    showConfirmButton: false,
-    timer: 3000,
-    timerProgressBar: true,
-    didOpen: (toast) => {
-      toast.addEventListener('mouseenter', Swal.stopTimer)
-      toast.addEventListener('mouseleave', Swal.resumeTimer)
-    }
-  })
+// const Toast = Swal.mixin({
+//     toast: true,
+//     position: 'top-end',
+//     showConfirmButton: true,
+//     timer: 3000,
+//     timerProgressBar: true,
+//     didOpen: (toast) => {
+//       toast.addEventListener('mouseenter', Swal.stopTimer)
+//       toast.addEventListener('mouseleave', Swal.resumeTimer)
+//     }
+//   })
 
-  window.Toast = Toast;
+//   window.Toast = Toast;
 
 // Toastr Alert
 

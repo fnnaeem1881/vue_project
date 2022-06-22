@@ -4,11 +4,11 @@
       <div class="col-12 pt-3">
         <div class="card">
           <div class="card-header">
-            <h3 class="card-title">ALl Category</h3>
+            <h3 class="card-title">ALl Post</h3>
 
             <div class="card-tools">
-              <router-link to="/add-category" class="btn btn-info">
-                Add New Category
+              <router-link to="/add-post" class="btn btn-info">
+                Add New Post
               </router-link>
             </div>
           </div>
@@ -18,27 +18,29 @@
               <thead>
                 <tr>
                   <th>ID</th>
-                  <th>Name</th>
-                  <th>Slug</th>
+                  <th>Title</th>
+                  <th>Content</th>
+                  <th>Image</th>
                   <th>Status</th>
                   <th>Action</th>
                 </tr>
               </thead>
               <tbody>
-                <tr v-for="category in getCategory">
-                  <td>{{ category.id }}</td>
-                  <td>{{ category.name }}</td>
-                  <td>{{ category.slug }}</td>
+                <tr v-for="post in getPost">
+                  <td>{{ post.id }}</td>
+                  <td>{{ post.title }}</td>
+                  <td>{{ post.content }}</td>
+                  <td><img :src=" post.thumbaile" width="100px" alt=""></td>
 
                   <td>
-                    <span class="badge" :class="statusColor(category.status)">{{
-                      statusName(category.status)
+                    <span class="badge" :class="statusColor(post.status)">{{
+                      statusName(post.status)
                     }}</span>
                   </td>
                   <td>
                     <router-link
-                      :to="`/edit-category/${category.id}`"
-                      @click="edit(category.id)"
+                      :to="`/edit-post/${post.id}`"
+                      @click="edit(post.id)"
                       class="text-light btn btn-danger btn-sm"
                       >Edit</router-link
                     >
@@ -46,7 +48,7 @@
                     <button
                       type="button"
                       class="btn btn-danger btn-sm"
-                      @click="remove(category.id)"
+                      @click="remove(post.id)"
                     >
                       Delete
                     </button>
@@ -70,13 +72,13 @@
 </template>
 <script>
 export default {
-  name: "categoris",
-  mounted() {
-    this.$store.dispatch("categoryAll");
+  name: "post",
+   mounted() {
+    this.$store.dispatch("PostGet");
   },
   computed: {
-    getCategory() {
-      return this.$store.getters.categories;
+    getPost() {
+      return this.$store.getters.post;
     },
   },
   methods: {
@@ -104,9 +106,9 @@ export default {
         .then((result) => {
           if (result.isConfirmed) {
             axios
-              .get("categoryDestroy/" + id)
+              .get("postDestroy/" + id)
               .then(function (response) {
-                test.$store.dispatch("categoryAll");
+                test.$store.dispatch("PostGet");
                 //    toastr.success("Category Has Ben Delated");
               })
               .catch(function (error) {
@@ -127,7 +129,7 @@ export default {
         });
     },
     emtyData() {
-      return this.getCategory.length < 1;
+      return this.getPost.length < 1;
     },
   },
 };
