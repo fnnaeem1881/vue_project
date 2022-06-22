@@ -100,7 +100,7 @@ class PostController extends Controller
         $post->title = $request->title;
         $post->category_id = $request->category_id;
         $post->content = $request->content;
-        $post->thumbaile = $request->avatar;
+        $post->thumbaile = $request->avatar ?? $request->thumbaile;
         $post->status = $request->status;
         $post->save();
     }
