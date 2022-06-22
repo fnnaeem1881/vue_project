@@ -70,7 +70,12 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $category = Category::findOrfail($id);
+       // dd($category);
+
+        return response()->json([
+            'category' => $category
+        ]);
     }
 
     /**
@@ -82,7 +87,12 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // dd($request->name);
+        $category = Category::find($id);
+        $category->name = $request->name;
+        $category->status = $request->status;
+        $category->save();
+
     }
 
     /**

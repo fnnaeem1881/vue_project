@@ -24,5 +24,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/category','Admin\CategoryController@index')->name('category.index');
 Route::get('/categoryDestroy/{id}','Admin\CategoryController@destroy');
+Route::get('/categoryEdit/{id}','Admin\CategoryController@edit')->name('edit.category');
+Route::post('/categoryEditStore/{id}','Admin\CategoryController@update')->name('update.category');
 Route::post('/submit-category','Admin\CategoryController@store')->name('category.store');
 Route::get('/post','Admin\PostController@index')->name('post.index');

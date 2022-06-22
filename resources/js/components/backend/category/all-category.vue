@@ -33,7 +33,8 @@
                       <td><span class="badge" :class="statusColor(category.status)">{{statusName(category.status)}}</span></td>
                       <td>
 
-                            <button type="button" class="btn btn-danger btn-sm">Edit</button>
+                           <router-link :to="`/edit-category/${category.id}`" @click="edit(category.id)" class="text-light btn btn-danger btn-sm">Edit</router-link>
+
                             <button type="button" class="btn btn-danger btn-sm" @click="remove(category.id)">Delete</button>
                       </td>
                     </tr>
@@ -92,7 +93,6 @@
         emtyData(){
             return (this.getCategory.length <1);
         },
-
     }
     }
 </script>
