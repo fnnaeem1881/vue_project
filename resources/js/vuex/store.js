@@ -15,15 +15,17 @@ export default {
       },
       actions:{
         categoryAll(data){
-            Axios.get("category")
+            Axios.get("/get-category")
             .then(function(response){
+                // console.log(response.data);
+               // console.log(response);
                data.commit("categoryy",response.data.category);
             }).catch(function(error){
 
             })
         },
         PostGet(data){
-            Axios.get("post")
+            Axios.get("/get-post")
             .then(function(response){
                 // alert('post');
                data.commit("posty",response.data.post);

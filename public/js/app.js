@@ -60618,8 +60618,8 @@ vue__WEBPACK_IMPORTED_MODULE_8___default.a.component('example-component', __webp
 
 
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
-  routes: _routes_routes_js__WEBPACK_IMPORTED_MODULE_7__["routes"] //mode: "history",
-
+  routes: _routes_routes_js__WEBPACK_IMPORTED_MODULE_7__["routes"],
+  mode: "history"
 });
 var app = new vue__WEBPACK_IMPORTED_MODULE_8___default.a({
   el: '#content',
@@ -61307,12 +61307,14 @@ __webpack_require__.r(__webpack_exports__);
   },
   actions: {
     categoryAll: function categoryAll(data) {
-      axios__WEBPACK_IMPORTED_MODULE_0___default.a.get("category").then(function (response) {
+      axios__WEBPACK_IMPORTED_MODULE_0___default.a.get("/get-category").then(function (response) {
+        // console.log(response.data);
+        // console.log(response);
         data.commit("categoryy", response.data.category);
       })["catch"](function (error) {});
     },
     PostGet: function PostGet(data) {
-      axios__WEBPACK_IMPORTED_MODULE_0___default.a.get("post").then(function (response) {
+      axios__WEBPACK_IMPORTED_MODULE_0___default.a.get("/get-post").then(function (response) {
         // alert('post');
         data.commit("posty", response.data.post);
       })["catch"](function (error) {});

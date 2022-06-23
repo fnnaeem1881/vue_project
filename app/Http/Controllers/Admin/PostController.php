@@ -17,6 +17,7 @@ class PostController extends Controller
     public function index()
     {
         $post = Post::with('category','user')->get();
+
         return response()->json([
             'post' => $post
         ]);
