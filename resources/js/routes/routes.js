@@ -7,6 +7,7 @@ import editCategory from '../components/backend/category/edit-category.vue';
 import post from '../components/backend/post/all-post.vue';
 import addPost from '../components/backend/post/add-post.vue';
 import editPost from '../components/backend/post/edit-post.vue';
+import notFound from '../components/not-found.vue';
 
 export const routes = [
     { path: '/home', component: home },
@@ -16,5 +17,6 @@ export const routes = [
     { path: '/post', component: post },
     { path: '/add-post', component: addPost },
     { path: '/edit-post/:id', component: editPost },
+    {path: '/:catchAll(.*)', component: notFound},
 
   ];
