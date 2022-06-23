@@ -2581,6 +2581,72 @@
 
 /***/ }),
 
+/***/ "./node_modules/admin-lte/dist/img/user1-128x128.jpg":
+/*!***********************************************************!*\
+  !*** ./node_modules/admin-lte/dist/img/user1-128x128.jpg ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/vendor/admin-lte/dist/user1-128x128.jpg?96ef26cc9d4986ee532ba1d1e7688085";
+
+/***/ }),
+
+/***/ "./node_modules/admin-lte/dist/img/user3-128x128.jpg":
+/*!***********************************************************!*\
+  !*** ./node_modules/admin-lte/dist/img/user3-128x128.jpg ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/vendor/admin-lte/dist/user3-128x128.jpg?7fdae59db374235d120da6a87cb3024c";
+
+/***/ }),
+
+/***/ "./node_modules/admin-lte/dist/img/user5-128x128.jpg":
+/*!***********************************************************!*\
+  !*** ./node_modules/admin-lte/dist/img/user5-128x128.jpg ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/vendor/admin-lte/dist/user5-128x128.jpg?8ac6ab342da4a6c7c39c45d00bbf7531";
+
+/***/ }),
+
+/***/ "./node_modules/admin-lte/dist/img/user6-128x128.jpg":
+/*!***********************************************************!*\
+  !*** ./node_modules/admin-lte/dist/img/user6-128x128.jpg ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/vendor/admin-lte/dist/user6-128x128.jpg?4d91e2f0a4ad630725177b8da46a67b8";
+
+/***/ }),
+
+/***/ "./node_modules/admin-lte/dist/img/user7-128x128.jpg":
+/*!***********************************************************!*\
+  !*** ./node_modules/admin-lte/dist/img/user7-128x128.jpg ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/vendor/admin-lte/dist/user7-128x128.jpg?2c5a913092f6bf17b097cc4b64d3cf08";
+
+/***/ }),
+
+/***/ "./node_modules/admin-lte/dist/img/user8-128x128.jpg":
+/*!***********************************************************!*\
+  !*** ./node_modules/admin-lte/dist/img/user8-128x128.jpg ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/vendor/admin-lte/dist/user8-128x128.jpg?07e64900b6c02c3390ec2b8d5da02fd2";
+
+/***/ }),
+
 /***/ "./node_modules/admin-lte/dist/js/adminlte.min.js":
 /*!********************************************************!*\
   !*** ./node_modules/admin-lte/dist/js/adminlte.min.js ***!
@@ -4935,6 +5001,483 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "home"
 });
@@ -5098,6 +5641,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "add-post",
   data: function data() {
@@ -5106,10 +5667,13 @@ __webpack_require__.r(__webpack_exports__);
         title: null,
         content: null,
         avatar: null,
-        category_id: '',
+        category_id: "Select Category",
+        category_name: '',
         //slug:null,
         status: 1
-      })
+      }),
+      hidden: false,
+      visible: false
     };
   },
   mounted: function mounted() {
@@ -5135,27 +5699,27 @@ __webpack_require__.r(__webpack_exports__);
         /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
           _this.form.post("/submit-post").then(function (data) {
-            test.$router.push('post');
+            test.$router.push("post");
             test.form.title = null;
             test.form.content = null;
             test.form.thumbaile = null;
-            test.avatar = '';
+            test.avatar = "";
             test.form.status = null;
             Vue.swal.fire("Saved!", "", "success");
           })["catch"](function (error) {
             Vue.swal.fire({
-              icon: 'error',
-              title: 'Oops...',
-              text: 'Something went wrong!'
+              icon: "error",
+              title: "Oops...",
+              text: "Something went wrong!"
             });
           });
         } else if (result.isDenied) {
           Vue.swal.fire("Changes are not saved", "", "info");
         } else {
           Vue.swal.fire({
-            icon: 'error',
-            title: 'Cancelled',
-            text: 'Your imaginary file is safe :)'
+            icon: "error",
+            title: "Cancelled",
+            text: "Your imaginary file is safe :)"
           });
         }
       });
@@ -5166,7 +5730,7 @@ __webpack_require__.r(__webpack_exports__);
       var file = e.target.files[0];
       var reader = new FileReader();
 
-      if (file['size'] < 2111775) {
+      if (file["size"] < 2111775) {
         reader.onloadend = function (file) {
           //console.log('RESULT', reader.result)
           _this2.form.avatar = reader.result;
@@ -5174,13 +5738,20 @@ __webpack_require__.r(__webpack_exports__);
 
         reader.readAsDataURL(file);
       } else {
-        alert('File size can not be bigger than 2 MB');
+        alert("File size can not be bigger than 2 MB");
       }
     },
     //For getting Instant Uploaded Photo
     get_avatar: function get_avatar() {
       var photo = this.form.avatar;
       return photo;
+    },
+    toggle: function toggle() {
+      this.visible = !this.visible;
+    },
+    select: function select(option) {
+      this.form.category_id = option.id;
+      this.form.category_name = option.name;
     }
   }
 });
@@ -5598,18 +6169,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -10107,6 +10666,25 @@ exports.push([module.i, ".swal2-popup.swal2-toast{box-sizing:border-box;grid-col
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/backend/post/add-post.vue?vue&type=style&index=0&lang=css&":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/backend/post/add-post.vue?vue&type=style&index=0&lang=css& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.aselect {\n  width: 280px;\n}\n.aselect .selector {\n  border: 1px solid gainsboro;\n  background: #f8f8f8;\n  position: relative;\n  z-index: 1;\n}\n.aselect .selector .arrow {\n  position: absolute;\n  right: 10px;\n  top: 40%;\n  width: 0;\n  height: 0;\n  border-left: 7px solid transparent;\n  border-right: 7px solid transparent;\n  border-top: 10px solid #888;\n  transform: rotateZ(0deg) translateY(0px);\n  transition-duration: 0.3s;\n  transition-timing-function: cubic-bezier(0.59, 1.39, 0.37, 1.01);\n}\n.aselect .selector .expanded {\n  transform: rotateZ(180deg) translateY(2px);\n}\n.aselect .selector .label {\n  display: block;\n  padding: 12px;\n  font-size: 16px;\n  color: #888;\n}\n.aselect ul {\n  width: 100%;\n  list-style-type: none;\n  padding: 0;\n  margin: 0;\n  font-size: 16px;\n  border: 1px solid gainsboro;\n  position: absolute;\n  z-index: 1;\n  background: #fff;\n}\n.aselect li {\n  padding: 12px;\n  color: #666;\n}\n.aselect li:hover {\n  color: white;\n  background: seagreen;\n}\n.aselect .current {\n  background: #eaeaea;\n}\n.aselect .hidden {\n  visibility: hidden;\n}\n.aselect .visible {\n  visibility: visible;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/not-found.vue?vue&type=style&index=0&lang=css&":
 /*!***************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/not-found.vue?vue&type=style&index=0&lang=css& ***!
@@ -10119,7 +10697,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700,800,900|Barlow:300,400,500,600,700,800,900&display=swap);", ""]);
 
 // module
-exports.push([module.i, "\n.container {\n  width: 100%;\n  height: 100vh;\n  overflow: hidden;\n}\n.container_inner {\n  position: relative;\n  top: 25%;\n  left: 25%;\n  width: 50%;\n  min-width: 600px;\n  max-width: 1000px;\n  height: 65%;\n  /* overflow: hidden; */\n}\n.circles {\n  background: #f4b09e;\n  position: absolute;\n  bottom: 10px;\n  border-radius: 100%;\n  opacity: 1;\n  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);\n  z-index: 3;\n}\n.text_container {\n  position: absolute;\n  top: 0%;\n  width: 100%;\n  text-align: center;\n}\n.title {\n  position: absolute;\n  top: 0;\n  margin: 0 auto;\n  width: 100%;\n  font-family: \"Barlow\", sans-serif;\n  font-size: 200px;\n  font-weight: 700;\n  letter-spacing: 4px;\n  text-shadow: 0 32px 40px -20px rgba(0, 0, 0, 0.25);\n  color: #6eced7;\n  z-index: 2;\n}\n.title .p404 {\n  margin: 0;\n}\n.title span {\n  color: #f4b09e;\n}\n.title:nth-of-type(2) {\n  color: #457a7c;\n  z-index: 1;\n  filter: blur(10px);\n  opacity: 0.8;\n}\n.title:nth-of-type(2) span {\n  color: #debdb3;\n}\n.line {\n  margin: 0 auto;\n  padding: 0;\n  height: 10px;\n  width: 50%;\n  background: #6eced7;\n  border-radius: 10px;\n}\n.opps {\n  position: absolute;\n  width: 100%;\n  font-family: \"Barlow Condensed\", sans-serif;\n  letter-spacing: 5px;\n  color: #6eced7;\n  top: 250px;\n  z-index: 1;\n}\n", ""]);
+exports.push([module.i, "\n.container_inner {\n  position: relative;\n  top: 25%;\n  left: 25%;\n  width: 50%;\n  min-width: 600px;\n  max-width: 1000px;\n  height: 65%;\n  /* overflow: hidden; */\n}\n.text_container {\n  position: absolute;\n  top: 0%;\n  width: 100%;\n  text-align: center;\n}\n.title {\n  position: absolute;\n  top: 0;\n  margin: 0 auto;\n  width: 100%;\n  font-family: \"Barlow\", sans-serif;\n  font-size: 200px;\n  font-weight: 700;\n  letter-spacing: 4px;\n  text-shadow: 0 32px 40px -20px rgba(0, 0, 0, 0.25);\n  color: #6eced7;\n  z-index: 2;\n}\n.title .p404 {\n  margin: 0;\n}\n.title span {\n  color: #f4b09e;\n}\n.title:nth-of-type(2) {\n  color: #457a7c;\n  z-index: 1;\n  filter: blur(10px);\n  opacity: 0.8;\n}\n.title:nth-of-type(2) span {\n  color: #debdb3;\n}\n.line {\n  margin: 0 auto;\n  padding: 0;\n  height: 10px;\n  width: 50%;\n  background: #6eced7;\n  border-radius: 10px;\n}\n.opps {\n  position: absolute;\n  width: 100%;\n  font-family: \"Barlow Condensed\", sans-serif;\n  letter-spacing: 5px;\n  color: #6eced7;\n  top: 250px;\n  z-index: 1;\n}\n", ""]);
 
 // exports
 
@@ -41342,6 +41920,36 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/backend/post/add-post.vue?vue&type=style&index=0&lang=css&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/backend/post/add-post.vue?vue&type=style&index=0&lang=css& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader??ref--6-1!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/postcss-loader/src??ref--6-2!../../../../../node_modules/vue-loader/lib??vue-loader-options!./add-post.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/backend/post/add-post.vue?vue&type=style&index=0&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/not-found.vue?vue&type=style&index=0&lang=css&":
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/not-found.vue?vue&type=style&index=0&lang=css& ***!
@@ -43154,7 +43762,893 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", [
       _c("div", { staticClass: "container-fluid" }, [
-        _c("h1", [_vm._v("Dashboard")]),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-3 col-6" }, [
+            _c("div", { staticClass: "small-box bg-info" }, [
+              _c("div", { staticClass: "inner" }, [
+                _c("h3", [_vm._v("150")]),
+                _vm._v(" "),
+                _c("p", [_vm._v("New Orders")]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "icon" }, [
+                _c("i", { staticClass: "ion ion-bag" }),
+              ]),
+              _vm._v(" "),
+              _c(
+                "a",
+                { staticClass: "small-box-footer", attrs: { href: "#" } },
+                [
+                  _vm._v("More info "),
+                  _c("i", { staticClass: "fas fa-arrow-circle-right" }),
+                ]
+              ),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-3 col-6" }, [
+            _c("div", { staticClass: "small-box bg-success" }, [
+              _c("div", { staticClass: "inner" }, [
+                _c("h3", [
+                  _vm._v("53"),
+                  _c("sup", { staticStyle: { "font-size": "20px" } }, [
+                    _vm._v("%"),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("p", [_vm._v("Bounce Rate")]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "icon" }, [
+                _c("i", { staticClass: "ion ion-stats-bars" }),
+              ]),
+              _vm._v(" "),
+              _c(
+                "a",
+                { staticClass: "small-box-footer", attrs: { href: "#" } },
+                [
+                  _vm._v("More info "),
+                  _c("i", { staticClass: "fas fa-arrow-circle-right" }),
+                ]
+              ),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-3 col-6" }, [
+            _c("div", { staticClass: "small-box bg-warning" }, [
+              _c("div", { staticClass: "inner" }, [
+                _c("h3", [_vm._v("44")]),
+                _vm._v(" "),
+                _c("p", [_vm._v("User Registrations")]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "icon" }, [
+                _c("i", { staticClass: "ion ion-person-add" }),
+              ]),
+              _vm._v(" "),
+              _c(
+                "a",
+                { staticClass: "small-box-footer", attrs: { href: "#" } },
+                [
+                  _vm._v("More info "),
+                  _c("i", { staticClass: "fas fa-arrow-circle-right" }),
+                ]
+              ),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-3 col-6" }, [
+            _c("div", { staticClass: "small-box bg-danger" }, [
+              _c("div", { staticClass: "inner" }, [
+                _c("h3", [_vm._v("65")]),
+                _vm._v(" "),
+                _c("p", [_vm._v("Unique Visitors")]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "icon" }, [
+                _c("i", { staticClass: "ion ion-pie-graph" }),
+              ]),
+              _vm._v(" "),
+              _c(
+                "a",
+                { staticClass: "small-box-footer", attrs: { href: "#" } },
+                [
+                  _vm._v("More info "),
+                  _c("i", { staticClass: "fas fa-arrow-circle-right" }),
+                ]
+              ),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("section", { staticClass: "col-lg-7 connectedSortable" }, [
+            _c("div", { staticClass: "card direct-chat direct-chat-primary" }, [
+              _c("div", { staticClass: "card-header" }, [
+                _c("h3", { staticClass: "card-title" }, [
+                  _vm._v("Direct Chat"),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-tools" }, [
+                  _c(
+                    "span",
+                    {
+                      staticClass: "badge badge-primary",
+                      attrs: { title: "3 New Messages" },
+                    },
+                    [_vm._v("3")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-tool",
+                      attrs: { type: "button", "data-card-widget": "collapse" },
+                    },
+                    [_c("i", { staticClass: "fas fa-minus" })]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-tool",
+                      attrs: {
+                        type: "button",
+                        title: "Contacts",
+                        "data-widget": "chat-pane-toggle",
+                      },
+                    },
+                    [_c("i", { staticClass: "fas fa-comments" })]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-tool",
+                      attrs: { type: "button", "data-card-widget": "remove" },
+                    },
+                    [_c("i", { staticClass: "fas fa-times" })]
+                  ),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-body" }, [
+                _c("div", { staticClass: "direct-chat-messages" }, [
+                  _c("div", { staticClass: "direct-chat-msg" }, [
+                    _c("div", { staticClass: "direct-chat-infos clearfix" }, [
+                      _c(
+                        "span",
+                        { staticClass: "direct-chat-name float-left" },
+                        [_vm._v("Alexander Pierce")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "span",
+                        { staticClass: "direct-chat-timestamp float-right" },
+                        [_vm._v("23 Jan 2:00 pm")]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "direct-chat-img",
+                      attrs: {
+                        src: __webpack_require__(/*! ../../../../node_modules/admin-lte/dist/img/user1-128x128.jpg */ "./node_modules/admin-lte/dist/img/user1-128x128.jpg"),
+                        alt: "message user image",
+                      },
+                    }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "direct-chat-text" }, [
+                      _vm._v(
+                        "\n                                    Is this template really for free? That's unbelievable!\n                                "
+                      ),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "direct-chat-msg right" }, [
+                    _c("div", { staticClass: "direct-chat-infos clearfix" }, [
+                      _c(
+                        "span",
+                        { staticClass: "direct-chat-name float-right" },
+                        [_vm._v("Sarah Bullock")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "span",
+                        { staticClass: "direct-chat-timestamp float-left" },
+                        [_vm._v("23 Jan 2:05 pm")]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "direct-chat-img",
+                      attrs: {
+                        src: __webpack_require__(/*! ../../../../node_modules/admin-lte/dist/img/user3-128x128.jpg */ "./node_modules/admin-lte/dist/img/user3-128x128.jpg"),
+                        alt: "message user image",
+                      },
+                    }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "direct-chat-text" }, [
+                      _vm._v("You better believe it!"),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "direct-chat-msg" }, [
+                    _c("div", { staticClass: "direct-chat-infos clearfix" }, [
+                      _c(
+                        "span",
+                        { staticClass: "direct-chat-name float-left" },
+                        [_vm._v("Alexander Pierce")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "span",
+                        { staticClass: "direct-chat-timestamp float-right" },
+                        [_vm._v("23 Jan 5:37 pm")]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "direct-chat-img",
+                      attrs: {
+                        src: __webpack_require__(/*! ../../../../node_modules/admin-lte/dist/img/user1-128x128.jpg */ "./node_modules/admin-lte/dist/img/user1-128x128.jpg"),
+                        alt: "message user image",
+                      },
+                    }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "direct-chat-text" }, [
+                      _vm._v(
+                        "\n                                    Working with AdminLTE on a great new app! Wanna join?\n                                "
+                      ),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "direct-chat-msg right" }, [
+                    _c("div", { staticClass: "direct-chat-infos clearfix" }, [
+                      _c(
+                        "span",
+                        { staticClass: "direct-chat-name float-right" },
+                        [_vm._v("Sarah Bullock")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "span",
+                        { staticClass: "direct-chat-timestamp float-left" },
+                        [_vm._v("23 Jan 6:10 pm")]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "direct-chat-img",
+                      attrs: {
+                        src: __webpack_require__(/*! ../../../../node_modules/admin-lte/dist/img/user3-128x128.jpg */ "./node_modules/admin-lte/dist/img/user3-128x128.jpg"),
+                        alt: "message user image",
+                      },
+                    }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "direct-chat-text" }, [
+                      _vm._v("I would love to."),
+                    ]),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "direct-chat-contacts" }, [
+                  _c("ul", { staticClass: "contacts-list" }, [
+                    _c("li", [
+                      _c("a", { attrs: { href: "#" } }, [
+                        _c("img", {
+                          staticClass: "contacts-list-img",
+                          attrs: {
+                            src: __webpack_require__(/*! ../../../../node_modules/admin-lte/dist/img/user1-128x128.jpg */ "./node_modules/admin-lte/dist/img/user1-128x128.jpg"),
+                            alt: "User Avatar",
+                          },
+                        }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "contacts-list-info" }, [
+                          _c("span", { staticClass: "contacts-list-name" }, [
+                            _vm._v(
+                              "\n                                                Count Dracula\n                                                "
+                            ),
+                            _c(
+                              "small",
+                              { staticClass: "contacts-list-date float-right" },
+                              [_vm._v("2/28/2015")]
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "contacts-list-msg" }, [
+                            _vm._v("How have you been? I was..."),
+                          ]),
+                        ]),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("a", { attrs: { href: "#" } }, [
+                        _c("img", {
+                          staticClass: "contacts-list-img",
+                          attrs: {
+                            src: __webpack_require__(/*! ../../../../node_modules/admin-lte/dist/img/user7-128x128.jpg */ "./node_modules/admin-lte/dist/img/user7-128x128.jpg"),
+                            alt: "User Avatar",
+                          },
+                        }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "contacts-list-info" }, [
+                          _c("span", { staticClass: "contacts-list-name" }, [
+                            _vm._v(
+                              "\n                                                Sarah Doe\n                                                "
+                            ),
+                            _c(
+                              "small",
+                              { staticClass: "contacts-list-date float-right" },
+                              [_vm._v("2/23/2015")]
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "contacts-list-msg" }, [
+                            _vm._v("I will be waiting for..."),
+                          ]),
+                        ]),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("a", { attrs: { href: "#" } }, [
+                        _c("img", {
+                          staticClass: "contacts-list-img",
+                          attrs: {
+                            src: __webpack_require__(/*! ../../../../node_modules/admin-lte/dist/img/user3-128x128.jpg */ "./node_modules/admin-lte/dist/img/user3-128x128.jpg"),
+                            alt: "User Avatar",
+                          },
+                        }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "contacts-list-info" }, [
+                          _c("span", { staticClass: "contacts-list-name" }, [
+                            _vm._v(
+                              "\n                                                Nadia Jolie\n                                                "
+                            ),
+                            _c(
+                              "small",
+                              { staticClass: "contacts-list-date float-right" },
+                              [_vm._v("2/20/2015")]
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "contacts-list-msg" }, [
+                            _vm._v("I'll call you back at..."),
+                          ]),
+                        ]),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("a", { attrs: { href: "#" } }, [
+                        _c("img", {
+                          staticClass: "contacts-list-img",
+                          attrs: {
+                            src: __webpack_require__(/*! ../../../../node_modules/admin-lte/dist/img/user5-128x128.jpg */ "./node_modules/admin-lte/dist/img/user5-128x128.jpg"),
+                            alt: "User Avatar",
+                          },
+                        }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "contacts-list-info" }, [
+                          _c("span", { staticClass: "contacts-list-name" }, [
+                            _vm._v(
+                              "\n                                                Nora S. Vans\n                                                "
+                            ),
+                            _c(
+                              "small",
+                              { staticClass: "contacts-list-date float-right" },
+                              [_vm._v("2/10/2015")]
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "contacts-list-msg" }, [
+                            _vm._v("Where is your new..."),
+                          ]),
+                        ]),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("a", { attrs: { href: "#" } }, [
+                        _c("img", {
+                          staticClass: "contacts-list-img",
+                          attrs: {
+                            src: __webpack_require__(/*! ../../../../node_modules/admin-lte/dist/img/user6-128x128.jpg */ "./node_modules/admin-lte/dist/img/user6-128x128.jpg"),
+                            alt: "User Avatar",
+                          },
+                        }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "contacts-list-info" }, [
+                          _c("span", { staticClass: "contacts-list-name" }, [
+                            _vm._v(
+                              "\n                                                John K.\n                                                "
+                            ),
+                            _c(
+                              "small",
+                              { staticClass: "contacts-list-date float-right" },
+                              [_vm._v("1/27/2015")]
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "contacts-list-msg" }, [
+                            _vm._v("Can I take a look at..."),
+                          ]),
+                        ]),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("a", { attrs: { href: "#" } }, [
+                        _c("img", {
+                          staticClass: "contacts-list-img",
+                          attrs: {
+                            src: __webpack_require__(/*! ../../../../node_modules/admin-lte/dist/img/user8-128x128.jpg */ "./node_modules/admin-lte/dist/img/user8-128x128.jpg"),
+                            alt: "User Avatar",
+                          },
+                        }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "contacts-list-info" }, [
+                          _c("span", { staticClass: "contacts-list-name" }, [
+                            _vm._v(
+                              "\n                                                Kenneth M.\n                                                "
+                            ),
+                            _c(
+                              "small",
+                              { staticClass: "contacts-list-date float-right" },
+                              [_vm._v("1/4/2015")]
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "contacts-list-msg" }, [
+                            _vm._v("Never mind I found..."),
+                          ]),
+                        ]),
+                      ]),
+                    ]),
+                  ]),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-footer" }, [
+                _c("form", { attrs: { action: "#", method: "post" } }, [
+                  _c("div", { staticClass: "input-group" }, [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        name: "message",
+                        placeholder: "Type Message ...",
+                      },
+                    }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "input-group-append" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-primary",
+                          attrs: { type: "button" },
+                        },
+                        [_vm._v("Send")]
+                      ),
+                    ]),
+                  ]),
+                ]),
+              ]),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("section", { staticClass: "col-lg-5 connectedSortable" }, [
+            _c("div", { staticClass: "card" }, [
+              _c("div", { staticClass: "card-header" }, [
+                _c("h3", { staticClass: "card-title" }, [
+                  _c("i", { staticClass: "ion ion-clipboard mr-1" }),
+                  _vm._v(
+                    "\n                            To Do List\n                        "
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-tools" }, [
+                  _c("ul", { staticClass: "pagination pagination-sm" }, [
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("«")]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("1")]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("2")]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("3")]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("»")]
+                      ),
+                    ]),
+                  ]),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-body" }, [
+                _c(
+                  "ul",
+                  {
+                    staticClass: "todo-list",
+                    attrs: { "data-widget": "todo-list" },
+                  },
+                  [
+                    _c("li", [
+                      _c("span", { staticClass: "handle" }, [
+                        _c("i", { staticClass: "fas fa-ellipsis-v" }),
+                        _vm._v(" "),
+                        _c("i", { staticClass: "fas fa-ellipsis-v" }),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "icheck-primary d-inline ml-2" },
+                        [
+                          _c("input", {
+                            attrs: {
+                              type: "checkbox",
+                              value: "",
+                              name: "todo1",
+                              id: "todoCheck1",
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "todoCheck1" } }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "text" }, [
+                        _vm._v("Design a nice theme"),
+                      ]),
+                      _vm._v(" "),
+                      _c("small", { staticClass: "badge badge-danger" }, [
+                        _c("i", { staticClass: "far fa-clock" }),
+                        _vm._v(" 2 mins"),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "tools" }, [
+                        _c("i", { staticClass: "fas fa-edit" }),
+                        _vm._v(" "),
+                        _c("i", { staticClass: "fas fa-trash-o" }),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("span", { staticClass: "handle" }, [
+                        _c("i", { staticClass: "fas fa-ellipsis-v" }),
+                        _vm._v(" "),
+                        _c("i", { staticClass: "fas fa-ellipsis-v" }),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "icheck-primary d-inline ml-2" },
+                        [
+                          _c("input", {
+                            attrs: {
+                              type: "checkbox",
+                              value: "",
+                              name: "todo2",
+                              id: "todoCheck2",
+                              checked: "",
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "todoCheck2" } }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "text" }, [
+                        _vm._v("Make the theme responsive"),
+                      ]),
+                      _vm._v(" "),
+                      _c("small", { staticClass: "badge badge-info" }, [
+                        _c("i", { staticClass: "far fa-clock" }),
+                        _vm._v(" 4 hours"),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "tools" }, [
+                        _c("i", { staticClass: "fas fa-edit" }),
+                        _vm._v(" "),
+                        _c("i", { staticClass: "fas fa-trash-o" }),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("span", { staticClass: "handle" }, [
+                        _c("i", { staticClass: "fas fa-ellipsis-v" }),
+                        _vm._v(" "),
+                        _c("i", { staticClass: "fas fa-ellipsis-v" }),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "icheck-primary d-inline ml-2" },
+                        [
+                          _c("input", {
+                            attrs: {
+                              type: "checkbox",
+                              value: "",
+                              name: "todo3",
+                              id: "todoCheck3",
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "todoCheck3" } }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "text" }, [
+                        _vm._v("Let theme shine like a star"),
+                      ]),
+                      _vm._v(" "),
+                      _c("small", { staticClass: "badge badge-warning" }, [
+                        _c("i", { staticClass: "far fa-clock" }),
+                        _vm._v(" 1 day"),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "tools" }, [
+                        _c("i", { staticClass: "fas fa-edit" }),
+                        _vm._v(" "),
+                        _c("i", { staticClass: "fas fa-trash-o" }),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("span", { staticClass: "handle" }, [
+                        _c("i", { staticClass: "fas fa-ellipsis-v" }),
+                        _vm._v(" "),
+                        _c("i", { staticClass: "fas fa-ellipsis-v" }),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "icheck-primary d-inline ml-2" },
+                        [
+                          _c("input", {
+                            attrs: {
+                              type: "checkbox",
+                              value: "",
+                              name: "todo4",
+                              id: "todoCheck4",
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "todoCheck4" } }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "text" }, [
+                        _vm._v("Let theme shine like a star"),
+                      ]),
+                      _vm._v(" "),
+                      _c("small", { staticClass: "badge badge-success" }, [
+                        _c("i", { staticClass: "far fa-clock" }),
+                        _vm._v(" 3 days"),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "tools" }, [
+                        _c("i", { staticClass: "fas fa-edit" }),
+                        _vm._v(" "),
+                        _c("i", { staticClass: "fas fa-trash-o" }),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("span", { staticClass: "handle" }, [
+                        _c("i", { staticClass: "fas fa-ellipsis-v" }),
+                        _vm._v(" "),
+                        _c("i", { staticClass: "fas fa-ellipsis-v" }),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "icheck-primary d-inline ml-2" },
+                        [
+                          _c("input", {
+                            attrs: {
+                              type: "checkbox",
+                              value: "",
+                              name: "todo5",
+                              id: "todoCheck5",
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "todoCheck5" } }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "text" }, [
+                        _vm._v("Check your messages and notifications"),
+                      ]),
+                      _vm._v(" "),
+                      _c("small", { staticClass: "badge badge-primary" }, [
+                        _c("i", { staticClass: "far fa-clock" }),
+                        _vm._v(" 1 week"),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "tools" }, [
+                        _c("i", { staticClass: "fas fa-edit" }),
+                        _vm._v(" "),
+                        _c("i", { staticClass: "fas fa-trash-o" }),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("span", { staticClass: "handle" }, [
+                        _c("i", { staticClass: "fas fa-ellipsis-v" }),
+                        _vm._v(" "),
+                        _c("i", { staticClass: "fas fa-ellipsis-v" }),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "icheck-primary d-inline ml-2" },
+                        [
+                          _c("input", {
+                            attrs: {
+                              type: "checkbox",
+                              value: "",
+                              name: "todo6",
+                              id: "todoCheck6",
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "todoCheck6" } }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "text" }, [
+                        _vm._v("Let theme shine like a star"),
+                      ]),
+                      _vm._v(" "),
+                      _c("small", { staticClass: "badge badge-secondary" }, [
+                        _c("i", { staticClass: "far fa-clock" }),
+                        _vm._v(" 1 month"),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "tools" }, [
+                        _c("i", { staticClass: "fas fa-edit" }),
+                        _vm._v(" "),
+                        _c("i", { staticClass: "fas fa-trash-o" }),
+                      ]),
+                    ]),
+                  ]
+                ),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-footer clearfix" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-primary float-right",
+                    attrs: { type: "button" },
+                  },
+                  [
+                    _c("i", { staticClass: "fas fa-plus" }),
+                    _vm._v(" Add item\n                        "),
+                  ]
+                ),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card bg-gradient-success" }, [
+              _c("div", { staticClass: "card-header border-0" }, [
+                _c("h3", { staticClass: "card-title" }, [
+                  _c("i", { staticClass: "far fa-calendar-alt" }),
+                  _vm._v(
+                    "\n                            Calendar\n                        "
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-tools" }, [
+                  _c("div", { staticClass: "btn-group" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-success btn-sm dropdown-toggle",
+                        attrs: {
+                          type: "button",
+                          "data-toggle": "dropdown",
+                          "data-offset": "-52",
+                        },
+                      },
+                      [_c("i", { staticClass: "fas fa-bars" })]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "dropdown-menu", attrs: { role: "menu" } },
+                      [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: { href: "#" },
+                          },
+                          [_vm._v("Add new event")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "a",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: { href: "#" },
+                          },
+                          [_vm._v("Clear events")]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "dropdown-divider" }),
+                        _vm._v(" "),
+                        _c(
+                          "a",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: { href: "#" },
+                          },
+                          [_vm._v("View calendar")]
+                        ),
+                      ]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-success btn-sm",
+                      attrs: { type: "button", "data-card-widget": "collapse" },
+                    },
+                    [_c("i", { staticClass: "fas fa-minus" })]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-success btn-sm",
+                      attrs: { type: "button", "data-card-widget": "remove" },
+                    },
+                    [_c("i", { staticClass: "fas fa-times" })]
+                  ),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-body pt-0" }, [
+                _c("div", {
+                  staticStyle: { width: "100%" },
+                  attrs: { id: "calendar" },
+                }),
+              ]),
+            ]),
+          ]),
+        ]),
       ]),
     ])
   },
@@ -43194,11 +44688,7 @@ var render = function () {
                 _c(
                   "router-link",
                   { staticClass: "btn btn-info", attrs: { to: "/post" } },
-                  [
-                    _vm._v(
-                      "\n                            ALl Post\n                        "
-                    ),
-                  ]
+                  [_vm._v("\n              ALl Post\n            ")]
                 ),
               ],
               1
@@ -43260,52 +44750,96 @@ var render = function () {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group" }, [
-                  _c("label", { attrs: { for: "category" } }, [
-                    _vm._v("Select Category"),
-                  ]),
-                  _vm._v(" "),
                   _c(
-                    "select",
+                    "label",
                     {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.form.category_id,
-                          expression: "form.category_id",
-                        },
-                      ],
-                      staticClass: "form-control",
-                      attrs: { id: "category_id" },
+                      attrs: { for: "category" },
                       on: {
-                        change: function ($event) {
-                          var $$selectedVal = Array.prototype.filter
-                            .call($event.target.options, function (o) {
-                              return o.selected
-                            })
-                            .map(function (o) {
-                              var val = "_value" in o ? o._value : o.value
-                              return val
-                            })
-                          _vm.$set(
-                            _vm.form,
-                            "category_id",
-                            $event.target.multiple
-                              ? $$selectedVal
-                              : $$selectedVal[0]
-                          )
+                        click: function ($event) {
+                          return _vm.toggle()
                         },
                       },
                     },
-                    _vm._l(_vm.getCategory, function (category) {
-                      return _c(
-                        "option",
-                        { domProps: { value: category.id } },
-                        [_vm._v(_vm._s(category.name))]
-                      )
-                    }),
-                    0
+                    [_vm._v("Select Category")]
                   ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "aselect" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "selector",
+                        on: {
+                          click: function ($event) {
+                            return _vm.toggle()
+                          },
+                        },
+                      },
+                      [
+                        _c("div", { staticClass: "label" }, [
+                          _vm.form.category_id == "Select Category"
+                            ? _c("span", [_vm._v(_vm._s(_vm.form.category_id))])
+                            : _c("span", { attrs: { id: "category_id" } }, [
+                                _vm._v(_vm._s(_vm.form.category_name) + " "),
+                                _c("br"),
+                                _c(
+                                  "p",
+                                  { staticStyle: { "font-size": "12px" } },
+                                  [_vm._v(_vm._s(_vm.form.category_name))]
+                                ),
+                              ]),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", {
+                          staticClass: "arrow",
+                          class: { expanded: _vm.visible },
+                        }),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            class: {
+                              hidden: !_vm.visible,
+                              visible: _vm.visible,
+                            },
+                          },
+                          [
+                            _c(
+                              "ul",
+                              _vm._l(_vm.getCategory, function (item) {
+                                return _c(
+                                  "li",
+                                  {
+                                    class: {
+                                      current: item === _vm.form.category_id,
+                                    },
+                                    on: {
+                                      click: function ($event) {
+                                        return _vm.select(item)
+                                      },
+                                    },
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                                  " +
+                                        _vm._s(item.name) +
+                                        " "
+                                    ),
+                                    _c("br"),
+                                    _c(
+                                      "p",
+                                      { staticStyle: { "font-size": "12px" } },
+                                      [_vm._v(_vm._s(item.slug))]
+                                    ),
+                                  ]
+                                )
+                              }),
+                              0
+                            ),
+                          ]
+                        ),
+                      ]
+                    ),
+                  ]),
                   _vm._v(" "),
                   _vm.form.errors.has("category")
                     ? _c("div", {
@@ -43476,11 +45010,7 @@ var render = function () {
                     staticClass: "btn btn-primary",
                     attrs: { type: "submit", disabled: _vm.form.busy },
                   },
-                  [
-                    _vm._v(
-                      "\n                            Add Post\n                        "
-                    ),
-                  ]
+                  [_vm._v("\n              Add Post\n            ")]
                 ),
                 _vm._v(" "),
                 _c(
@@ -43489,11 +45019,7 @@ var render = function () {
                     staticClass: "btn btn-danger float-right",
                     attrs: { type: "reset" },
                   },
-                  [
-                    _vm._v(
-                      "\n                            Cancel\n                        "
-                    ),
-                  ]
+                  [_vm._v("\n              Cancel\n            ")]
                 ),
               ]),
             ]
@@ -61286,7 +62812,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _add_post_vue_vue_type_template_id_6a410165___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./add-post.vue?vue&type=template&id=6a410165& */ "./resources/js/components/backend/post/add-post.vue?vue&type=template&id=6a410165&");
 /* harmony import */ var _add_post_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./add-post.vue?vue&type=script&lang=js& */ "./resources/js/components/backend/post/add-post.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _add_post_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./add-post.vue?vue&type=style&index=0&lang=css& */ "./resources/js/components/backend/post/add-post.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -61294,7 +62822,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _add_post_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _add_post_vue_vue_type_template_id_6a410165___WEBPACK_IMPORTED_MODULE_0__["render"],
   _add_post_vue_vue_type_template_id_6a410165___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -61323,6 +62851,22 @@ component.options.__file = "resources/js/components/backend/post/add-post.vue"
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_add_post_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./add-post.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/backend/post/add-post.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_add_post_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/backend/post/add-post.vue?vue&type=style&index=0&lang=css&":
+/*!********************************************************************************************!*\
+  !*** ./resources/js/components/backend/post/add-post.vue?vue&type=style&index=0&lang=css& ***!
+  \********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_add_post_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/style-loader!../../../../../node_modules/css-loader??ref--6-1!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/postcss-loader/src??ref--6-2!../../../../../node_modules/vue-loader/lib??vue-loader-options!./add-post.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/backend/post/add-post.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_add_post_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_add_post_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_add_post_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_add_post_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
 
 /***/ }),
 

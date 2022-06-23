@@ -30,11 +30,7 @@
 </template>
 <style>
 @import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700,800,900|Barlow:300,400,500,600,700,800,900&display=swap");
-.container {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
+
 .container_inner {
   position: relative;
   top: 25%;
@@ -46,15 +42,7 @@
   /* overflow: hidden; */
 }
 
-.circles {
-  background: #f4b09e;
-  position: absolute;
-  bottom: 10px;
-  border-radius: 100%;
-  opacity: 1;
-  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
-  z-index: 3;
-}
+
 
 .text_container {
   position: absolute;
