@@ -4974,7 +4974,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     edit: function edit(id) {
       var test = this;
-      axios.get("categoryEdit/" + test.$route.params.id).then(function (response) {
+      axios.get("/categoryEdit/" + test.$route.params.id).then(function (response) {
         var category = response.data.category;
         test.form.fill(category); // test.$store.dispatch("categoryAll");
       });
@@ -5659,6 +5659,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "add-post",
   data: function data() {
@@ -6149,7 +6151,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     edit: function edit(id) {
       var test = this;
-      axios.get("postEdit/" + test.$route.params.id).then(function (response) {
+      axios.get("/postEdit/" + test.$route.params.id).then(function (response) {
         var post = response.data.post;
         test.form.fill(post);
         console.log(post); // test.$store.dispatch("categoryAll");
@@ -44819,16 +44821,29 @@ var render = function () {
                                     },
                                   },
                                   [
-                                    _vm._v(
-                                      "\n                                  " +
-                                        _vm._s(item.name) +
-                                        " "
-                                    ),
+                                    _c("img", {
+                                      attrs: {
+                                        src: __webpack_require__(/*! ../../../../../public/admin/assets/images/AdminLTELogo.png */ "./public/admin/assets/images/AdminLTELogo.png"),
+                                        width: "20px",
+                                        alt: "",
+                                      },
+                                    }),
+                                    _vm._v("  " + _vm._s(item.name) + " "),
                                     _c("br"),
+                                    _vm._v(" "),
                                     _c(
                                       "p",
                                       { staticStyle: { "font-size": "12px" } },
-                                      [_vm._v(_vm._s(item.slug))]
+                                      [
+                                        _c("img", {
+                                          attrs: {
+                                            src: __webpack_require__(/*! ../../../../../public/admin/assets/images/AdminLTELogo.png */ "./public/admin/assets/images/AdminLTELogo.png"),
+                                            width: "20px",
+                                            alt: "",
+                                          },
+                                        }),
+                                        _vm._v(" " + _vm._s(item.slug)),
+                                      ]
                                     ),
                                   ]
                                 )
@@ -62310,6 +62325,17 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./public/admin/assets/images/AdminLTELogo.png":
+/*!*****************************************************!*\
+  !*** ./public/admin/assets/images/AdminLTELogo.png ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/AdminLTELogo.png?ca1dcf584d7506f8fa1bfa0f4c3cad40";
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -63238,8 +63264,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\vue_project\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\vue_project\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\htdocs\vue_project\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\htdocs\vue_project\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

@@ -238,7 +238,7 @@ export default {
     },
     edit(id) {
       let test = this;
-      axios.get("postEdit/" + test.$route.params.id).then(function (response) {
+      axios.get("/postEdit/" + test.$route.params.id).then(function (response) {
         let post = response.data.post;
         test.form.fill(post);
         console.log(post);

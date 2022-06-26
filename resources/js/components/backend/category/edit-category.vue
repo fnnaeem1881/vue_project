@@ -155,7 +155,7 @@ export default {
         edit(id) {
             let test = this;
             axios
-                .get("categoryEdit/" + test.$route.params.id)
+                .get("/categoryEdit/" + test.$route.params.id)
                 .then(function (response) {
                     let category = response.data.category;
                     test.form.fill(category);

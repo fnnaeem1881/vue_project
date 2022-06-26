@@ -43,7 +43,9 @@
                         <div :class="{ hidden : !visible, visible }">
                             <ul>
                                 <li :class="{ current : item === form.category_id }" v-for="item in getCategory" @click="select(item)">
-                                    {{ item.name }} </br><p style="font-size:12px">{{ item.slug }}</p></li>
+                                  <img src="../../../../../public/admin/assets/images/AdminLTELogo.png" width="20px" alt="">  {{ item.name }} <br>
+
+                                  <p style="font-size:12px"> <img src="../../../../../public/admin/assets/images/AdminLTELogo.png" width="20px" alt=""> {{ item.slug }}</p></li>
                             </ul>
                         </div>
                     </div>

@@ -36,3 +36,4 @@ Route::post('/submit-post','Admin\PostController@store')->name('post.store');
 
 Route::get('/get-post','Admin\PostController@index')->name('post.index');
 Route::get('/{anypath}', 'HomeController@index')->where('path','.*');
+Route::get('/{anypath}/{id}', 'HomeController@index')->where('path','.*');

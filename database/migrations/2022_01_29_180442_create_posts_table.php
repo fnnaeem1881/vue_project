@@ -19,7 +19,7 @@ class CreatePostsTable extends Migration
             $table->unsignedBigInteger('category_id');
             $table->string('title',180);
             $table->longText('content');
-            $table->string('thumbaile',255);
+            $table->longText('thumbaile');
             $table->string('status')->default('draft');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('category_id')->references('id')->on('categories')->cascadeOnDelete();
