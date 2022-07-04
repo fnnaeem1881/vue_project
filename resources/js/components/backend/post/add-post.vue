@@ -36,13 +36,15 @@
                     <div class="selector" @click="toggle()">
                         <div class="label">
                                 <span v-if="form.category_id == 'Select Category'">{{form.category_id}}</span>
-                                <span id="category_id"  v-else >{{ form.category_name }} <br><p style="font-size:12px">{{ form.category_name }}</p>
+                                <span id="category_id"  v-else >{{ form.category_slug }} <br><p style="font-size:12px">{{ form.category_name }}</p>
                                 </span>
                         </div>
+
                         <div class="arrow" :class="{ expanded : visible }"></div>
                         <div :class="{ hidden : !visible, visible }">
                             <ul>
-                                <li :class="{ current : item === form.category_id }" v-for="item in getCategory" @click="select(item)">
+                                <div class="searchSelect"><input v-model="searchValue" placeholder="Search.."  @click="toggle()" id="filtername" type="text" /></div>
+                                <li :class="{ current : item === form.category_id }" v-for="item in filteredNames" @click="select(item)">
                                   <img src="../../../../../public/admin/assets/images/AdminLTELogo.png" width="20px" alt="">  {{ item.name }} <br>
 
                                   <p style="font-size:12px"> <img src="../../../../../public/admin/assets/images/AdminLTELogo.png" width="20px" alt=""> {{ item.slug }}</p></li>
@@ -176,12 +178,15 @@ export default {
         content: null,
         avatar: null,
         category_id: "Select Category",
-        category_name:'',
+        category_title:'',
+        category_slug:'',
         //slug:null,
         status: 1,
       }),
       hidden: false,
       visible: false,
+      searchValue: '',
+
 
     };
   },
@@ -192,6 +197,17 @@ export default {
     getCategory() {
       return this.$store.getters.categories;
     },
+    filteredNames() {
+      let tempRecipes = this.$store.getters.categories
+        if (this.searchValue != '' && this.searchValue) {
+            tempRecipes = tempRecipes.filter((item) => {
+            return item.name
+                .toUpperCase()
+                .includes(this.searchValue.toUpperCase())
+            })
+        }
+        return tempRecipes
+    }
   },
   methods: {
     addPost: function () {
@@ -259,8 +275,9 @@ export default {
       this.visible = !this.visible;
     },
     select(option) {
-      this.form.category_id = option.id;
       this.form.category_name = option.name;
+      this.form.category_id = option.id;
+      this.form.category_slug = option.slug;
     },
   },
 };
@@ -324,5 +341,16 @@ export default {
 }
 .aselect .visible {
   visibility: visible;
+}
+.hidden{
+    display: none;
+}
+.searchSelect input {
+    width: 95%;
+    padding: 5px;
+    margin: auto;
+    display: block;
+    margin-top: 5px;
+    border: solid 1px #ddd;
 }
 </style>

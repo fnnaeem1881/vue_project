@@ -5661,6 +5661,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "add-post",
   data: function data() {
@@ -5670,12 +5672,14 @@ __webpack_require__.r(__webpack_exports__);
         content: null,
         avatar: null,
         category_id: "Select Category",
-        category_name: '',
+        category_title: '',
+        category_slug: '',
         //slug:null,
         status: 1
       }),
       hidden: false,
-      visible: false
+      visible: false,
+      searchValue: ''
     };
   },
   mounted: function mounted() {
@@ -5684,11 +5688,24 @@ __webpack_require__.r(__webpack_exports__);
   computed: {
     getCategory: function getCategory() {
       return this.$store.getters.categories;
+    },
+    filteredNames: function filteredNames() {
+      var _this = this;
+
+      var tempRecipes = this.$store.getters.categories;
+
+      if (this.searchValue != '' && this.searchValue) {
+        tempRecipes = tempRecipes.filter(function (item) {
+          return item.name.toUpperCase().includes(_this.searchValue.toUpperCase());
+        });
+      }
+
+      return tempRecipes;
     }
   },
   methods: {
     addPost: function addPost() {
-      var _this = this;
+      var _this2 = this;
 
       var test = this;
       Vue.swal.fire({
@@ -5700,7 +5717,7 @@ __webpack_require__.r(__webpack_exports__);
       }).then(function (result) {
         /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
-          _this.form.post("/submit-post").then(function (data) {
+          _this2.form.post("/submit-post").then(function (data) {
             test.$router.push("post");
             test.form.title = null;
             test.form.content = null;
@@ -5727,7 +5744,7 @@ __webpack_require__.r(__webpack_exports__);
       });
     },
     upload_avatar: function upload_avatar(e) {
-      var _this2 = this;
+      var _this3 = this;
 
       var file = e.target.files[0];
       var reader = new FileReader();
@@ -5735,7 +5752,7 @@ __webpack_require__.r(__webpack_exports__);
       if (file["size"] < 2111775) {
         reader.onloadend = function (file) {
           //console.log('RESULT', reader.result)
-          _this2.form.avatar = reader.result;
+          _this3.form.avatar = reader.result;
         };
 
         reader.readAsDataURL(file);
@@ -5752,8 +5769,9 @@ __webpack_require__.r(__webpack_exports__);
       this.visible = !this.visible;
     },
     select: function select(option) {
-      this.form.category_id = option.id;
       this.form.category_name = option.name;
+      this.form.category_id = option.id;
+      this.form.category_slug = option.slug;
     }
   }
 });
@@ -10680,7 +10698,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.aselect {\n  width: 280px;\n}\n.aselect .selector {\n  border: 1px solid gainsboro;\n  background: #f8f8f8;\n  position: relative;\n  z-index: 1;\n}\n.aselect .selector .arrow {\n  position: absolute;\n  right: 10px;\n  top: 40%;\n  width: 0;\n  height: 0;\n  border-left: 7px solid transparent;\n  border-right: 7px solid transparent;\n  border-top: 10px solid #888;\n  transform: rotateZ(0deg) translateY(0px);\n  transition-duration: 0.3s;\n  transition-timing-function: cubic-bezier(0.59, 1.39, 0.37, 1.01);\n}\n.aselect .selector .expanded {\n  transform: rotateZ(180deg) translateY(2px);\n}\n.aselect .selector .label {\n  display: block;\n  padding: 12px;\n  font-size: 16px;\n  color: #888;\n}\n.aselect ul {\n  width: 100%;\n  list-style-type: none;\n  padding: 0;\n  margin: 0;\n  font-size: 16px;\n  border: 1px solid gainsboro;\n  position: absolute;\n  z-index: 1;\n  background: #fff;\n}\n.aselect li {\n  padding: 12px;\n  color: #666;\n}\n.aselect li:hover {\n  color: white;\n  background: seagreen;\n}\n.aselect .current {\n  background: #eaeaea;\n}\n.aselect .hidden {\n  visibility: hidden;\n}\n.aselect .visible {\n  visibility: visible;\n}\n", ""]);
+exports.push([module.i, "\n.aselect {\n  width: 280px;\n}\n.aselect .selector {\n  border: 1px solid gainsboro;\n  background: #f8f8f8;\n  position: relative;\n  z-index: 1;\n}\n.aselect .selector .arrow {\n  position: absolute;\n  right: 10px;\n  top: 40%;\n  width: 0;\n  height: 0;\n  border-left: 7px solid transparent;\n  border-right: 7px solid transparent;\n  border-top: 10px solid #888;\n  transform: rotateZ(0deg) translateY(0px);\n  transition-duration: 0.3s;\n  transition-timing-function: cubic-bezier(0.59, 1.39, 0.37, 1.01);\n}\n.aselect .selector .expanded {\n  transform: rotateZ(180deg) translateY(2px);\n}\n.aselect .selector .label {\n  display: block;\n  padding: 12px;\n  font-size: 16px;\n  color: #888;\n}\n.aselect ul {\n  width: 100%;\n  list-style-type: none;\n  padding: 0;\n  margin: 0;\n  font-size: 16px;\n  border: 1px solid gainsboro;\n  position: absolute;\n  z-index: 1;\n  background: #fff;\n}\n.aselect li {\n  padding: 12px;\n  color: #666;\n}\n.aselect li:hover {\n  color: white;\n  background: seagreen;\n}\n.aselect .current {\n  background: #eaeaea;\n}\n.aselect .hidden {\n  visibility: hidden;\n}\n.aselect .visible {\n  visibility: visible;\n}\n.hidden{\n    display: none;\n}\n.searchSelect input {\n    width: 95%;\n    padding: 5px;\n    margin: auto;\n    display: block;\n    margin-top: 5px;\n    border: solid 1px #ddd;\n}\n", ""]);
 
 // exports
 
@@ -44781,7 +44799,7 @@ var render = function () {
                           _vm.form.category_id == "Select Category"
                             ? _c("span", [_vm._v(_vm._s(_vm.form.category_id))])
                             : _c("span", { attrs: { id: "category_id" } }, [
-                                _vm._v(_vm._s(_vm.form.category_name) + " "),
+                                _vm._v(_vm._s(_vm.form.category_slug) + " "),
                                 _c("br"),
                                 _c(
                                   "p",
@@ -44807,48 +44825,82 @@ var render = function () {
                           [
                             _c(
                               "ul",
-                              _vm._l(_vm.getCategory, function (item) {
-                                return _c(
-                                  "li",
-                                  {
-                                    class: {
-                                      current: item === _vm.form.category_id,
+                              [
+                                _c("div", { staticClass: "searchSelect" }, [
+                                  _c("input", {
+                                    directives: [
+                                      {
+                                        name: "model",
+                                        rawName: "v-model",
+                                        value: _vm.searchValue,
+                                        expression: "searchValue",
+                                      },
+                                    ],
+                                    attrs: {
+                                      placeholder: "Search..",
+                                      id: "filtername",
+                                      type: "text",
                                     },
+                                    domProps: { value: _vm.searchValue },
                                     on: {
                                       click: function ($event) {
-                                        return _vm.select(item)
+                                        return _vm.toggle()
+                                      },
+                                      input: function ($event) {
+                                        if ($event.target.composing) {
+                                          return
+                                        }
+                                        _vm.searchValue = $event.target.value
                                       },
                                     },
-                                  },
-                                  [
-                                    _c("img", {
-                                      attrs: {
-                                        src: __webpack_require__(/*! ../../../../../public/admin/assets/images/AdminLTELogo.png */ "./public/admin/assets/images/AdminLTELogo.png"),
-                                        width: "20px",
-                                        alt: "",
+                                  }),
+                                ]),
+                                _vm._v(" "),
+                                _vm._l(_vm.filteredNames, function (item) {
+                                  return _c(
+                                    "li",
+                                    {
+                                      class: {
+                                        current: item === _vm.form.category_id,
                                       },
-                                    }),
-                                    _vm._v("  " + _vm._s(item.name) + " "),
-                                    _c("br"),
-                                    _vm._v(" "),
-                                    _c(
-                                      "p",
-                                      { staticStyle: { "font-size": "12px" } },
-                                      [
-                                        _c("img", {
-                                          attrs: {
-                                            src: __webpack_require__(/*! ../../../../../public/admin/assets/images/AdminLTELogo.png */ "./public/admin/assets/images/AdminLTELogo.png"),
-                                            width: "20px",
-                                            alt: "",
-                                          },
-                                        }),
-                                        _vm._v(" " + _vm._s(item.slug)),
-                                      ]
-                                    ),
-                                  ]
-                                )
-                              }),
-                              0
+                                      on: {
+                                        click: function ($event) {
+                                          return _vm.select(item)
+                                        },
+                                      },
+                                    },
+                                    [
+                                      _c("img", {
+                                        attrs: {
+                                          src: __webpack_require__(/*! ../../../../../public/admin/assets/images/AdminLTELogo.png */ "./public/admin/assets/images/AdminLTELogo.png"),
+                                          width: "20px",
+                                          alt: "",
+                                        },
+                                      }),
+                                      _vm._v("  " + _vm._s(item.name) + " "),
+                                      _c("br"),
+                                      _vm._v(" "),
+                                      _c(
+                                        "p",
+                                        {
+                                          staticStyle: { "font-size": "12px" },
+                                        },
+                                        [
+                                          _c("img", {
+                                            attrs: {
+                                              src: __webpack_require__(/*! ../../../../../public/admin/assets/images/AdminLTELogo.png */ "./public/admin/assets/images/AdminLTELogo.png"),
+                                              width: "20px",
+                                              alt: "",
+                                            },
+                                          }),
+                                          _vm._v(" " + _vm._s(item.slug)),
+                                        ]
+                                      ),
+                                    ]
+                                  )
+                                }),
+                              ],
+                              2
                             ),
                           ]
                         ),
